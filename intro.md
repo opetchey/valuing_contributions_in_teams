@@ -4,3 +4,5 @@
 3. Get a shareable link to your googlesheet. 
 4. Paste the shareable link in the dialog box below left.
 5. Check out the summary of each individual's planned and realised contribution to your project, and the threshold contribution required for some reward (e.g. authorship).
+
+[The code for the app is here on Github.](https://github.com/opetchey/valuing_contributions_in_teams)
