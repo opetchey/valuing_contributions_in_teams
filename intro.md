@@ -1,5 +1,3 @@
-# Valuing contributions in teams
-
 1. Make a copy of [the google spreadsheet here](https://docs.google.com/spreadsheets/d/1hfpQblHZeAKTDYqYSvOw2E6eQ__Vp-n_NsOjcosfG5Y).
 2. Fill in your project and team information, replacing anything you need to. You and your team can update this information as your project progresses.
 3. Get a shareable link to your googlesheet. 

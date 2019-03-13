@@ -54,15 +54,15 @@ shinyServer(function(input, output, session) {
     
     contributions <- bind_rows(planned_contributions,
                                realised_contributions)
-    plot(1,1)
-    #ggplot(contributions,
-    #       aes(x=Person, y=total, fill=type)) +
-    #  geom_col(position = "dodge2") +
-     # geom_hline(yintercept = threshold_contribution_for_authorship,
-     #            col="red", size=2, linetype="dashed") +
-     # ggtitle(paste0("Project name: ", project_name)) +
-     #ylab("Total contribution") +
-      #theme(legend.title = element_blank())
+
+    ggplot(contributions,
+           aes(x=Person, y=total, fill=type)) +
+      geom_col(position = "dodge2") +
+      geom_hline(yintercept = threshold_contribution_for_authorship,
+                 col="red", size=2, linetype="dashed") +
+      ggtitle(paste0("Project name: ", project_name)) +
+     ylab("Total contribution") +
+      theme(legend.title = element_blank())
   })
   
   
