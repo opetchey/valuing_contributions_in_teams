@@ -10,7 +10,7 @@ shinyUI(
       sidebarPanel(
         
         textInput("gs_path", "Google sheet URL",
-                  value = "https://docs.google.com/spreadsheets/d/1hfpQblHZeAKTDYqYSvOw2E6eQ__Vp-n_NsOjcosfG5Y",
+                  value = "https://docs.google.com/spreadsheets/d/1jw3rfSDpQbT-IfgGsCbYSy7XIe92UiZqCFw8zMZcLRM",
                   width = NULL, placeholder = NULL)
         
      
@@ -24,7 +24,7 @@ shinyUI(
       mainPanel(
         #verbatimTextOutput("gs_info")
         #DT::dataTableOutput("the_data")
-        plotOutput("plot1")
+        textOutput("text1")
       )
     )
   ))
