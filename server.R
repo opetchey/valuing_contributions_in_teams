@@ -5,6 +5,7 @@ library(readxl)
 library(rorcid)
 library(shiny)
 library(DT)
+library(tidyr)
 
 
 
@@ -19,6 +20,20 @@ shinyServer(function(input, output, session) {
   #)
   
   #output$gs_info <- renderPrint(print(val()))
+  
+  output$text0 <- reactive <- renderText({
+    
+    project_info <- read_sheet("https://docs.google.com/spreadsheets/d/1jw3rfSDpQbT-IfgGsCbYSy7XIe92UiZqCFw8zMZcLRM",
+                               sheet = "project information")
+    
+    project_text <- unite(project_info, col =, "temp", c("Project parameter", "value"), sep = ": ") %>%
+      pull(temp) %>%
+      paste0(collapse = "; ")
+    
+    print(project_text)
+    
+    
+  })
   
   output$text1 <- reactive <- renderText({
     
@@ -44,6 +59,8 @@ shinyServer(function(input, output, session) {
     
    
   })
+  
+  
   
   
 })

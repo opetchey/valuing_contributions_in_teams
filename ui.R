@@ -24,6 +24,7 @@ shinyUI(
       mainPanel(
         #verbatimTextOutput("gs_info")
         #DT::dataTableOutput("the_data")
+        textOutput("text0"),
         textOutput("text1")
       )
     )
